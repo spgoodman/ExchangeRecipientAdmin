@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Based on Bootstrap dashboard">
+    <title>Exchange Recipient Admin Center - {TITLE}</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link href="node_modules/@primer/octicons/build/build.css" rel="stylesheet">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
+    <link href="dashboard.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0
+      shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Exchange
+        Recipient Admin Center</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed"
+        type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle
+        navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-nav">
+        <div class="nav-item text-nowrap">
+          <a class="nav-link px-3" href="/exit">Exit</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light
+          sidebar collapse">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">
+                  <span data-feather="home"></span>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/remotemailboxes">
+                  <span data-feather="user"></span>
+                  Remote Mailboxes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/distributiongroups">
+                  <span data-feather="users"></span>
+
+                  Distribution Groups</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/contacts">
+                  <span data-feather="mail"></span>
+                  Contacts
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/emailaddresspolicies">
+                  <span data-feather="list"></span>
+                  Email Address Policies
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/accepteddomains">
+                  <span data-feather="layers"></span>
+                  Accepted Domains
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://admin.exchange.microsoft.com/"
+                  target="_blank">
+                  <span data-feather="external-link"></span>
+                  Exchange Admin Center
+                </a>
+              </li>
+            </ul>
+
+
+          </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
+            align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h2 class="h2">Welcome to the Exchange Recipient Admin Center</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Manage Remote Mailboxes</h5>
+                  <p class="card-text">Manage the Active Directory attributes
+                    for your Exchange Online mailboxes, using the supported
+                    Exchange Management Tools installed on this machine&nbsp;
+                    &nbsp; &nbsp;</p>
+                  <a href="/remotemailboxes" class="btn btn-primary">Manage</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Manage Distribution Groups</h5>
+                  <p class="card-text">Manage Exchange-related information for
+                    distribution groups in your local Active Directory 
+                    or mail-enable an existing group in Active Directory.</p>
+                  <a href="/distributiongroups" class="btn btn-primary">Manage</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Manage Contacts</h5>
+                  <p class="card-text">Mail contacts are essentially contacts
+                    for people outside your organization. Each mail contact has
+                    an external email address. Manage the mail contacts stored
+                    in your local Active Directory that are synced to Exchange
+                    Online.</p>
+                  <a href="/contacts" class="btn btn-primary">Manage</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Manage Email Address Policies</h5>
+                  <p class="card-text">Email address policies define the rules
+                    that create email addresses for recipients in your Exchange
+                    organization. Email address policies in the Exchange
+                    Recipient Admin Center update the local attributes for your
+                    Exchange Online mailboxes and affect the email address
+                    format and the email addresses that mailboxes have. </p>
+                  <a href="/contacts" class="btn btn-primary">Manage</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Manage Contacts</h5>
+                  <p class="card-text">Manage mail contacts stored in your local
+                    Active Directory</p>
+                  <a href="/contacts" class="btn btn-primary">Manage</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Manage Accepted Domains</h5>
+                  <p class="card-text">Accepted domains are the SMTP name spaces
+                    that you configure in an Exchange organization to receive
+                    email messages. You should ensure that accepted domains
+                    listed here match those registered as Custom Domains in
+                    Microsoft 365</p>
+                  <a href="/accepteddomains" class="btn btn-primary">Manage</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Practical 365</h5>
+                  <p class="card-text">Learn more about Microsoft 365 with real-world practical guidance from experts and Microsoft MVPs</p>
+                  <a href="https://practical365.com" target="_blank" class="btn btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+        </main>
+      </div>
+    </div>
+    <script>
+feather.replace()
+</script>
+  </body>
+</html>

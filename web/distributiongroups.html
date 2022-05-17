@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Based on Bootstrap dashboard">
+    <title>Exchange Recipient Admin Center - {TITLE}</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link href="node_modules/@primer/octicons/build/build.css" rel="stylesheet">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
+    <link href="dashboard.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0
+      shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Exchange
+        Recipient Admin Center</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed"
+        type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle
+        navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-nav">
+        <div class="nav-item text-nowrap">
+          <a class="nav-link px-3" href="/exit">Exit</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light
+          sidebar collapse">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">
+                  <span data-feather="home"></span>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/remotemailboxes">
+                  <span data-feather="user"></span>
+                  Remote Mailboxes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/distributiongroups">
+                  <span data-feather="users"></span>
+
+                  Distribution Groups</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/contacts">
+                  <span data-feather="mail"></span>
+                  Contacts
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/emailaddresspolicies">
+                  <span data-feather="list"></span>
+                  Email Address Policies
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/accepteddomains">
+                  <span data-feather="layers"></span>
+                  Accepted Domains
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://admin.exchange.microsoft.com/"
+                  target="_blank">
+                  <span data-feather="external-link"></span>
+                  Exchange Admin Center
+                </a>
+              </li>
+            </ul>
+
+
+          </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
+            align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h2 class="h2">Distribution Groups</h2>
+          </div>
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
+            align-items-center">
+            <p>Manage Exchange-related information for
+              distribution groups in your local Active Directory or mail-enable an existing group in Active Directory.</p>
+          </div>
+          
+          <div class="mb-3">
+            <a class="btn btn-primary disabled " href="#" role="button">Add a Group</a>
+            <a class="btn btn-primary disabled " href="#" role="button">Mail-Enable a Group</a>
+
+          </div>
+         
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-dl-tab" data-bs-toggle="tab" data-bs-target="#nav-dl" type="button" role="tab" aria-controls="nav-dl" aria-selected="true">Distribution Lists</button>
+              <button class="nav-link" id="nav-mes-tab" data-bs-toggle="tab" data-bs-target="#nav-mes" type="button" role="tab" aria-controls="nav-mes" aria-selected="false">Mail-enabled security</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-dl" role="tabpanel" aria-labelledby="nav-dl-tab" tabindex="0">
+
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Group Name</th>
+                    <th scope="col">Group email</th>
+                    <th scope="col">Created on</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+  <!-- {row_dl} -->
+                </tbody>
+              </table>
+
+            </div>
+            <div class="tab-pane fade" id="nav-mes" role="tabpanel" aria-labelledby="nav-mes-tab" tabindex="0">
+
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Group Name</th>
+                    <th scope="col">Group email</th>
+                    <th scope="col">Created on</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+  <!-- {row_mes} -->
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+
+          
+
+          </main>
+        </div>
+      </div>
+      <script>
+feather.replace()
+</script>
+    </body>
+  </html>

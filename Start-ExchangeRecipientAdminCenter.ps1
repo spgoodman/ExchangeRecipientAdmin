@@ -225,6 +225,7 @@ try {
 					<a href=`"#`">$($Item.Name)</a></th>
 					<td>$($Item.DomainName)</td>
 					<td>$($Item.DomainType)</td>
+					<td>$($Item.Default)</td>
 					</tr>";
 				}
 

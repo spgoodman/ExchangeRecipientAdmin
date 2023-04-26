@@ -196,13 +196,15 @@ try {
 
 				# Prepare email address policies list
 				$HTMLROWS = ""
-				foreach ($Item in (Get-EmailAddressPolicy | Select Name, Priority, RecipientFilter)) {
+				foreach ($Item in (Get-EmailAddressPolicy | Select Name, Priority, RecipientFilter,EnabledPrimarySMTPAddressTemplate,EnabledEmailAddressTemplates)) {
 					$HTMLROWS += "
 					<tr>
 					<th scope=`"row`">
 					<a href=`"#`">$($Item.Name)</a></th>
 					<td>$($Item.Priority)</td>
 					<td>$($Item.RecipientFilter)</td>
+					<td>$($Item.EnabledPrimarySMTPAddressTemplate)</td>
+					<td>$($Item.EnabledEmailAddressTemplates)</td>
 					</tr>";
 				}
 
